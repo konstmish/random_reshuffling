@@ -3,7 +3,7 @@ import sklearn
 from sklearn.datasets import load_svmlight_file
 
 
-def get_dataset(dataset, data_path='../datasets/'):
+def get_dataset(dataset, data_path='./datasets/'):
     if dataset in ['covtype', 'real-sim', 'webspam']:
         return load_svmlight_file(data_path + dataset + '.bz2')
     elif dataset in ['mushrooms', 'gisette', 'w8a']:
